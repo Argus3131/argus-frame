@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Baidu TestSuite01" parallel="classes" thread-count="5" verbose="2" preserve-order="true">
+    <parameter name="browserName" value="chrome"/>
+    <test name="页面1：百度界面搜索验证" preserve-order="true" verbose="2">
+        <classes>
+            <class name="testcase.webTest.BaiduTest">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <listeners >
+        <!-- ExtentReport 报告  -->
+        <listener class-name="config.ExtentTestNGIReporterListener"/>
+        <listener class-name="config.TestLogListener"/>
+        <listener class-name="config.ResultListener"/>
+        <listener class-name="config.LocalTransformer" />
+    </listeners>
+</suite>
