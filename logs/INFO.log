@@ -11,3 +11,142 @@
 2020-11-23 20:52:49:832:INFO testcase.webTest.BaiduTest.test3(BaiduTest.java:65) - 线程睡眠 1 s
 2020-11-23 20:52:50:832:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
 2020-11-23 20:52:51:183:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:02:01:719:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:02:07:995:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:35) - 百度搜索-测试
+2020-11-23 21:02:08:243:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:37) - 线程睡眠 1 s
+2020-11-23 21:02:09:247:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:02:09:952:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:02:09:955:INFO testcase.webTest.BaiduTest.test2(BaiduTest.java:52) - 百度搜索-lol
+2020-11-23 21:02:10:079:INFO testcase.webTest.BaiduTest.test2(BaiduTest.java:54) - 线程睡眠 1 s
+2020-11-23 21:02:11:079:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:02:11:441:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:02:11:442:INFO testcase.webTest.BaiduTest.test3(BaiduTest.java:63) - 百度搜索-斗罗大陆
+2020-11-23 21:02:11:556:INFO testcase.webTest.BaiduTest.test3(BaiduTest.java:65) - 线程睡眠 1 s
+2020-11-23 21:02:12:557:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:02:12:911:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:09:09:812:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:09:16:110:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:35) - 百度搜索-测试
+2020-11-23 21:09:16:346:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:37) - 线程睡眠 1 s
+2020-11-23 21:09:17:348:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:09:18:090:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:09:18:789:INFO testcase.webTest.BaiduTest.test2(BaiduTest.java:53) - 百度搜索-lol
+2020-11-23 21:09:18:988:INFO testcase.webTest.BaiduTest.test3(BaiduTest.java:65) - 百度搜索-斗罗大陆
+2020-11-23 21:11:34:867:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:11:41:138:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:32) - 百度搜索-测试
+2020-11-23 21:11:41:284:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:34) - 线程睡眠 1 s
+2020-11-23 21:11:42:288:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:11:42:825:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:11:42:827:INFO testcase.webTest.BaiduTest.test2(BaiduTest.java:54) - 百度搜索-lol
+2020-11-23 21:11:42:947:INFO testcase.webTest.BaiduTest.test2(BaiduTest.java:56) - 线程睡眠 1 s
+2020-11-23 21:11:43:949:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:11:44:315:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:11:44:316:INFO testcase.webTest.BaiduTest.test3(BaiduTest.java:65) - 百度搜索-斗罗大陆
+2020-11-23 21:11:44:418:INFO testcase.webTest.BaiduTest.test3(BaiduTest.java:67) - 线程睡眠 1 s
+2020-11-23 21:11:45:418:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:11:45:751:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:13:05:128:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:13:12:196:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:33) - 百度搜索-测试
+2020-11-23 21:13:12:434:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:35) - 线程睡眠 1 s
+2020-11-23 21:13:13:436:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:13:13:802:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:13:14:457:INFO testcase.webTest.BaiduTest.test2(BaiduTest.java:56) - 百度搜索-lol
+2020-11-23 21:13:14:486:INFO testcase.webTest.BaiduTest.test3(BaiduTest.java:67) - 百度搜索-斗罗大陆
+2020-11-23 21:15:27:934:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:15:34:189:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:33) - 百度搜索-测试
+2020-11-23 21:15:34:389:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:35) - 线程睡眠 1 s
+2020-11-23 21:15:35:392:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:15:36:033:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:15:36:677:INFO testcase.webTest.BaiduTest.test2(BaiduTest.java:57) - 百度搜索-lol
+2020-11-23 21:15:36:686:INFO testcase.webTest.BaiduTest.test3(BaiduTest.java:68) - 百度搜索-斗罗大陆
+2020-11-23 21:27:03:782:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:27:09:936:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:34) - 百度搜索-测试
+2020-11-23 21:27:10:145:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:36) - 线程睡眠 1 s
+2020-11-23 21:27:11:148:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:27:11:856:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:27:12:509:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:27:18:253:INFO testcase.webTest.BaiduTest.test2(BaiduTest.java:59) - 百度搜索-lol
+2020-11-23 21:27:18:456:INFO testcase.webTest.BaiduTest.test2(BaiduTest.java:61) - 线程睡眠 1 s
+2020-11-23 21:27:19:458:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:27:19:863:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:27:20:555:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:27:26:348:INFO testcase.webTest.BaiduTest.test3(BaiduTest.java:72) - 百度搜索-斗罗大陆
+2020-11-23 21:27:26:559:INFO testcase.webTest.BaiduTest.test3(BaiduTest.java:74) - 线程睡眠 1 s
+2020-11-23 21:27:27:560:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:27:28:028:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:27:50:708:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:27:56:906:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:34) - 百度搜索-测试
+2020-11-23 21:27:57:087:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:36) - 线程睡眠 1 s
+2020-11-23 21:27:58:089:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:27:58:683:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:27:58:688:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:28:04:441:INFO testcase.webTest.BaiduTest.test2(BaiduTest.java:59) - 百度搜索-lol
+2020-11-23 21:28:04:629:INFO testcase.webTest.BaiduTest.test2(BaiduTest.java:61) - 线程睡眠 1 s
+2020-11-23 21:28:05:629:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:28:06:179:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:28:06:848:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:28:12:551:INFO testcase.webTest.BaiduTest.test3(BaiduTest.java:72) - 百度搜索-斗罗大陆
+2020-11-23 21:28:12:758:INFO testcase.webTest.BaiduTest.test3(BaiduTest.java:74) - 线程睡眠 1 s
+2020-11-23 21:28:13:760:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:28:14:227:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:28:52:922:INFO config.TestLogListener.onStart(TestLogListener.java:37) - ====================页面1：百度界面搜索验证测试开始====================
+2020-11-23 21:28:52:947:INFO config.TestLogListener.onTestStart(TestLogListener.java:49) - ========testcase.webTest.BaiduTest.test1测试开始========
+2020-11-23 21:28:52:958:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:28:59:121:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:34) - 百度搜索-测试
+2020-11-23 21:28:59:308:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:36) - 线程睡眠 1 s
+2020-11-23 21:29:00:316:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:29:00:721:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:29:00:722:INFO config.TestLogListener.onTestSkipped(TestLogListener.java:92) - ========testcase.webTest.BaiduTest.test1跳过测试========
+2020-11-23 21:29:00:723:INFO config.TestLogListener.onTestStart(TestLogListener.java:49) - ========testcase.webTest.BaiduTest.test1测试开始========
+2020-11-23 21:29:00:724:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:29:06:428:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:34) - 百度搜索-测试
+2020-11-23 21:29:06:658:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:36) - 线程睡眠 1 s
+2020-11-23 21:29:07:660:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:29:08:200:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:29:08:200:INFO config.TestLogListener.onTestFailure(TestLogListener.java:74) - ========testcase.webTest.BaiduTest.test1测试失败,失败原因如下：
+java.lang.RuntimeException========
+2020-11-23 21:29:08:208:INFO config.TestLogListener.onTestStart(TestLogListener.java:49) - ========testcase.webTest.BaiduTest.test2测试开始========
+2020-11-23 21:29:08:210:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:29:14:071:INFO testcase.webTest.BaiduTest.test2(BaiduTest.java:59) - 百度搜索-lol
+2020-11-23 21:29:14:274:INFO testcase.webTest.BaiduTest.test2(BaiduTest.java:61) - 线程睡眠 1 s
+2020-11-23 21:29:15:276:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:29:15:685:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:29:16:365:INFO config.TestLogListener.onTestSuccess(TestLogListener.java:61) - ========testcase.webTest.BaiduTest.test2测试通过========
+2020-11-23 21:29:16:369:INFO config.TestLogListener.onTestStart(TestLogListener.java:49) - ========testcase.webTest.BaiduTest.test3测试开始========
+2020-11-23 21:29:16:375:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:29:22:076:INFO testcase.webTest.BaiduTest.test3(BaiduTest.java:72) - 百度搜索-斗罗大陆
+2020-11-23 21:29:22:269:INFO testcase.webTest.BaiduTest.test3(BaiduTest.java:74) - 线程睡眠 1 s
+2020-11-23 21:29:23:269:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:29:23:706:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:29:24:346:INFO config.TestLogListener.onTestSuccess(TestLogListener.java:61) - ========testcase.webTest.BaiduTest.test3测试通过========
+2020-11-23 21:29:24:347:INFO config.TestLogListener.onFinish(TestLogListener.java:103) - ====================页面1：百度界面搜索验证测试结束====================
+2020-11-23 21:31:49:841:INFO config.TestLogListener.onStart(TestLogListener.java:37) - ====================页面1：百度界面搜索验证测试开始====================
+2020-11-23 21:31:49:867:INFO config.TestLogListener.onTestStart(TestLogListener.java:49) - ========testcase.webTest.BaiduTest.test1测试开始========
+2020-11-23 21:31:49:879:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:31:56:070:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:34) - 百度搜索-测试
+2020-11-23 21:31:56:251:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:36) - 线程睡眠 1 s
+2020-11-23 21:31:57:259:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:31:57:631:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:31:57:632:INFO config.TestLogListener.onTestSkipped(TestLogListener.java:92) - ========testcase.webTest.BaiduTest.test1跳过测试========
+2020-11-23 21:31:57:633:INFO config.TestLogListener.onTestStart(TestLogListener.java:49) - ========testcase.webTest.BaiduTest.test1测试开始========
+2020-11-23 21:31:57:634:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:32:03:260:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:34) - 百度搜索-测试
+2020-11-23 21:32:03:486:INFO testcase.webTest.BaiduTest.test1(BaiduTest.java:36) - 线程睡眠 1 s
+2020-11-23 21:32:04:487:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:32:05:021:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:32:05:021:INFO config.TestLogListener.onTestFailure(TestLogListener.java:74) - ========testcase.webTest.BaiduTest.test1测试失败,失败原因如下：
+java.lang.RuntimeException========
+2020-11-23 21:32:05:026:INFO config.TestLogListener.onTestStart(TestLogListener.java:49) - ========testcase.webTest.BaiduTest.test2测试开始========
+2020-11-23 21:32:05:028:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:32:10:704:INFO testcase.webTest.BaiduTest.test2(BaiduTest.java:59) - 百度搜索-lol
+2020-11-23 21:32:10:922:INFO testcase.webTest.BaiduTest.test2(BaiduTest.java:61) - 线程睡眠 1 s
+2020-11-23 21:32:11:922:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:32:12:365:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:32:13:016:INFO config.TestLogListener.onTestSuccess(TestLogListener.java:61) - ========testcase.webTest.BaiduTest.test2测试通过========
+2020-11-23 21:32:13:016:INFO config.TestLogListener.onTestStart(TestLogListener.java:49) - ========testcase.webTest.BaiduTest.test3测试开始========
+2020-11-23 21:32:13:017:INFO common.WebDriverInitialization.setDriver(WebDriverInitialization.java:50) - 准备初始化WebDriver对象...检查到当前操作系统是:windows 10
+2020-11-23 21:32:18:597:INFO testcase.webTest.BaiduTest.test3(BaiduTest.java:72) - 百度搜索-斗罗大陆
+2020-11-23 21:32:18:788:INFO testcase.webTest.BaiduTest.test3(BaiduTest.java:74) - 线程睡眠 1 s
+2020-11-23 21:32:19:788:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1131) - 百度搜索-正在截图
+2020-11-23 21:32:20:241:INFO utils.WebDriverUtil.screenShot(WebDriverUtil.java:1149) - 百度搜索-截图结束
+2020-11-23 21:32:20:899:INFO config.TestLogListener.onTestSuccess(TestLogListener.java:61) - ========testcase.webTest.BaiduTest.test3测试通过========
+2020-11-23 21:32:20:902:INFO config.TestLogListener.onFinish(TestLogListener.java:103) - ====================页面1：百度界面搜索验证测试结束====================

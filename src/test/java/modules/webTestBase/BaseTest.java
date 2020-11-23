@@ -33,6 +33,7 @@ public class BaseTest<T extends BasePage>{
             page = (T) newTclass(clazz);
             page.setUrl(url);
             page.setDriver(driver);
+//            System.out.println(driver);
         } catch (IOException | IllegalAccessException | InstantiationException e) {
             e.printStackTrace();
         }
@@ -54,14 +55,19 @@ public class BaseTest<T extends BasePage>{
     public void tearDown() {
         try {
             page.sleep(1);
+            quit();
         } catch (Exception e) {
             e.printStackTrace();
         }
         driver.quit();
     }
 
-    public void close() {
+    public void quit() {
         driver.quit();
+    }
+
+    public void close() {
+        driver.close();
     }
 
 
