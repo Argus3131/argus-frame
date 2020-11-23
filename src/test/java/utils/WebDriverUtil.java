@@ -1,5 +1,6 @@
 package utils;
 
+import config.ReportLogger;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.Dimension;
@@ -41,6 +42,7 @@ public class WebDriverUtil {
     public final String LINE = "\r\n";
     public final String smile = "^_^";
     public final String sad = "*o*";
+    private static final ReportLogger reportLogger = ReportLogger.getReportLogger(WebDriverUtil.class);
 
     /**
      *   懒汉式单例类.在第一次调用的时候实例化自己
@@ -1120,7 +1122,13 @@ public class WebDriverUtil {
         }
     }
 
+    /**
+     * @param driver
+     * @param behavior
+     * @param testClassName
+     */
     public static void screenShot(WebDriver driver,String behavior,String testClassName) {
+        reportLogger.info("%s-正在截图",behavior);
         String dir_name = "screenshot";
         if (!(new File(dir_name).isDirectory())) {
             new File(dir_name).mkdir();
@@ -1135,8 +1143,10 @@ public class WebDriverUtil {
                 FileUtils.copyFile(source_file, new File(dir_name + File.separator + time + ".png"));
             }
         } catch (IOException e) {
+            reportLogger.info("%s-截图失败",behavior);
             e.printStackTrace();
         }
+        reportLogger.info("%s-截图结束",behavior);
     }
 
     /**

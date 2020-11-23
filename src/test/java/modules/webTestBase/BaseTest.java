@@ -60,5 +60,9 @@ public class BaseTest<T extends BasePage>{
         driver.quit();
     }
 
+    public void close() {
+        driver.quit();
+    }
+
 
 }

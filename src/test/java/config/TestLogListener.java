@@ -3,8 +3,15 @@ package config;
 import lombok.extern.slf4j.Slf4j;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
 import utils.LogUtil;
+import utils.PropertiesUtil;
+
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.util.Properties;
 
 /**
  * @author Argus
@@ -17,6 +24,8 @@ import utils.LogUtil;
  */
 @Slf4j
 public class TestLogListener extends TestListenerAdapter {
+
+
     /**
      * 开始
      *
@@ -25,7 +34,8 @@ public class TestLogListener extends TestListenerAdapter {
     @Override
     public void onStart(ITestContext iTestContext) {
         super.onStart(iTestContext);
-        LogUtil.APP.info(String.format("====================%s测试开始====================", iTestContext.getName()));
+        ReportLogger.getReportLogger().info(String.format("====================%s测试开始====================", iTestContext.getName()));
+//        LogUtil.APP.info(String.format("====================%s测试开始====================", iTestContext.getName()));
     }
 
     /**
@@ -36,7 +46,8 @@ public class TestLogListener extends TestListenerAdapter {
     @Override
     public void onTestStart(ITestResult iTestResult) {
         super.onTestStart(iTestResult);
-        LogUtil.APP.info(String.format("========%s.%s测试开始========", iTestResult.getInstanceName(), iTestResult.getName()));
+        ReportLogger.getReportLogger().info(String.format("========%s.%s测试开始========", iTestResult.getInstanceName(), iTestResult.getName()));
+//        LogUtil.APP.info(String.format("========%s.%s测试开始========", iTestResult.getInstanceName(), iTestResult.getName()));
     }
 
     /**
@@ -47,7 +58,9 @@ public class TestLogListener extends TestListenerAdapter {
     @Override
     public void onTestSuccess(ITestResult iTestResult) {
         super.onTestSuccess(iTestResult);
-        LogUtil.APP.info(String.format("========%s.%s测试通过========", iTestResult.getInstanceName(), iTestResult.getName()));
+        ReportLogger.getReportLogger().info(String.format("========%s.%s测试通过========", iTestResult.getInstanceName(), iTestResult.getName()));
+
+//        LogUtil.APP.info(String.format("========%s.%s测试通过========", iTestResult.getInstanceName(), iTestResult.getName()));
     }
 
     /**
@@ -58,7 +71,9 @@ public class TestLogListener extends TestListenerAdapter {
     @Override
     public void onTestFailure(ITestResult iTestResult) {
         super.onTestFailure(iTestResult);
-        LogUtil.APP.error(String.format("========%s.%s测试失败,失败原因如下：\n%s========", iTestResult.getInstanceName(), iTestResult.getName(), iTestResult.getThrowable()));
+        ReportLogger.getReportLogger().info(String.format("========%s.%s测试失败,失败原因如下：\n%s========", iTestResult.getInstanceName(), iTestResult.getName(), iTestResult.getThrowable()));
+
+//        LogUtil.APP.error(String.format("========%s.%s测试失败,失败原因如下：\n%s========", iTestResult.getInstanceName(), iTestResult.getName(), iTestResult.getThrowable()));
 
         /**
          * 出现异常进行截图操作，这里得要自己去实现
@@ -73,7 +88,8 @@ public class TestLogListener extends TestListenerAdapter {
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
         super.onTestSkipped(iTestResult);
-        LogUtil.APP.info(String.format("========%s.%s跳过测试========", iTestResult.getInstanceName(), iTestResult.getName()));
+//        LogUtil.APP.info(String.format("========%s.%s跳过测试========", iTestResult.getInstanceName(), iTestResult.getName()));
+        ReportLogger.getReportLogger().info(String.format("========%s.%s跳过测试========", iTestResult.getInstanceName(), iTestResult.getName()));
     }
 
     /**
@@ -84,6 +100,7 @@ public class TestLogListener extends TestListenerAdapter {
     @Override
     public void onFinish(ITestContext iTestContext) {
         super.onFinish(iTestContext);
-        LogUtil.APP.info(String.format("====================%s测试结束====================", iTestContext.getName()));
+        ReportLogger.getReportLogger().info(String.format("====================%s测试结束====================", iTestContext.getName()));
+//        LogUtil.APP.info(String.format("====================%s测试结束====================", iTestContext.getName()));
     }
 }

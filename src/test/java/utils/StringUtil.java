@@ -33,4 +33,9 @@ public class StringUtil {
 		if (StringUtils.isEmpty(str)) {return "";}
 		return str.substring(0, 1).toUpperCase() + str.substring(1);
 	}
+
+
+	public static void main(String[] args) {
+
+	}
 }

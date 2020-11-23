@@ -1,5 +1,6 @@
 package common;
 
+import config.ReportLogger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,7 +9,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import utils.LogUtil;
+import testcase.webTest.BaiduTest;
 import utils.PropertiesUtil;
 
 import java.io.File;
@@ -29,7 +30,7 @@ public class WebDriverInitialization{
 	// 获取当前项目路径
 	private final static String USER_HOME_DIR = System.getProperty("user.dir");
 
-
+	private static final ReportLogger reportLogger = ReportLogger.getReportLogger(BaiduTest.class);
 	/**
 	 * 初始化WebDriver
 	 * @param driverType 浏览器类型
@@ -39,13 +40,14 @@ public class WebDriverInitialization{
 	 */
 	public static WebDriver setDriver(Integer driverType) throws WebDriverException,IOException{
 		if (driverType == null) {
-			LogUtil.APP.warn("传入参数不符合数值类型规范，初始化失败:{}",driverType);
+			reportLogger.info("传入参数不符合数值类型规范，初始化失败:%s",String.valueOf(driverType));
+
 			throw new RuntimeException();
 		}
 		// 获取驱动路径
 		String drivenpath= USER_HOME_DIR + File.separator + PropertiesUtil.readProperty("application.properties", "drivers.relative-path") + File.separator;
 		WebDriver webDriver = null;
-		LogUtil.APP.info("准备初始化WebDriver对象...检查到当前操作系统是:{}",OS);
+		reportLogger.info("准备初始化WebDriver对象...检查到当前操作系统是:%s",OS);
 		switch (driverType) {
 			case 0:
 				webDriver = WebDriverInitialization.setIEDriver(webDriver,drivenpath);
@@ -61,7 +63,7 @@ public class WebDriverInitialization{
 				webDriver = WebDriverInitialization.setEdgeDriver(webDriver,drivenpath);
 				break;
 			default:
-				LogUtil.APP.warn("浏览器类型标识:{}，获取到的浏览器类型标识未定义，默认IE浏览器进行执行....",driverType);
+				reportLogger.info("浏览器类型标识:%s，获取到的浏览器类型标识未定义，默认IE浏览器进行执行....",String.valueOf(driverType));
 				System.setProperty("webdriver.ie.driver",drivenpath+"IEDriverServer.exe");
 				webDriver = new InternetExplorerDriver();
 		}
@@ -84,7 +86,7 @@ public class WebDriverInitialization{
 			System.setProperty("webdriver.ie.driver",drivenpath+"IEDriverServer.exe");
 			webDriver = new InternetExplorerDriver();
 		}else{
-			LogUtil.APP.warn("当前操作系统无法进行IE浏览器的Web UI测试，请选择火狐或是谷歌浏览器！");
+			reportLogger.info("当前操作系统无法进行IE浏览器的Web UI测试，请选择火狐或是谷歌浏览器！");
 		}
 		return webDriver;
 	}
@@ -97,7 +99,7 @@ public class WebDriverInitialization{
 			options.addArguments("start-maximized");
 			System.setProperty("webdriver.gecko.driver",drivenpath+"geckodriver_mac");
 		}else{
-			LogUtil.APP.info("检测到当前系统环境是Linux,默认使用headless方式运行Firefox浏览器的Web UI自动化...");
+			reportLogger.info("检测到当前系统环境是Linux,默认使用headless方式运行Firefox浏览器的Web UI自动化...");
 			//无界面参数
 			options.setHeadless(true);
 			//禁用沙盒
@@ -118,7 +120,7 @@ public class WebDriverInitialization{
 			options.addArguments("start-maximized");
 			System.setProperty("webdriver.chrome.driver",drivenpath+"chromedriver_mac");
 		}else{
-			LogUtil.APP.info("检测到当前系统环境是Linux,默认使用headless方式运行Chrome浏览器的Web UI自动化...");
+			reportLogger.info("检测到当前系统环境是Linux,默认使用headless方式运行Chrome浏览器的Web UI自动化...");
 			//无界面参数
 			options.setHeadless(true);
 			//禁用沙盒
@@ -138,7 +140,7 @@ public class WebDriverInitialization{
 			System.setProperty("webdriver.edge.driver",drivenpath+"msedgedriver_mac");
 			webDriver = new EdgeDriver();
 		}else{
-			LogUtil.APP.warn("当前操作系统无法进行Edge浏览器的Web UI测试，请选择火狐或是谷歌浏览器！");
+			reportLogger.info("当前操作系统无法进行Edge浏览器的Web UI测试，请选择火狐或是谷歌浏览器！");
 		}
 		return webDriver;
 	}
