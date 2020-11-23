@@ -5,7 +5,6 @@ import common.DriverType;
 import config.ReportLogger;
 import modules.webTestBase.BaseTest;
 import org.testng.annotations.*;
-import utils.LogUtil;
 import utils.PropertiesUtil;
 import utils.WebDriverUtil;
 

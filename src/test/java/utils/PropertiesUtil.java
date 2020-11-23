@@ -1,6 +1,8 @@
 package utils;
 
+import config.ReportLogger;
 import org.apache.commons.lang3.StringUtils;
+import testcase.webTest.BaiduTest;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,7 +13,7 @@ import java.util.Properties;
 
 public class PropertiesUtil {
 
-//    private static Logger logger = LoggerFactory.getLogger(PropertiesUtil.class);
+    private static final ReportLogger reportLogger = ReportLogger.getReportLogger(BaiduTest.class);
 
     private static Properties props;
 
@@ -22,7 +24,7 @@ public class PropertiesUtil {
         try {
             props.load(new InputStreamReader(PropertiesUtil.class.getClassLoader().getResourceAsStream(fileName), StandardCharsets.UTF_8));
         } catch (IOException e) {
-            LogUtil.APP.error("文件读取失败",e);
+            reportLogger.info("文件读取失败",e.getMessage());
         }
     }
 
@@ -69,7 +71,7 @@ public class PropertiesUtil {
             p.load(new InputStreamReader(is, "UTF-8"));
             value = p.getProperty(key);
         } catch (IOException e) {
-            LogUtil.APP.error("文件读取失败",e);
+            reportLogger.info("文件读取失败",e.getMessage());
         } finally {
             try {
                 if (is != null) {

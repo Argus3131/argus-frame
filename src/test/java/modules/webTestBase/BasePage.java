@@ -1,5 +1,6 @@
 package modules.webTestBase;
 
+import config.ReportLogger;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -9,7 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.LogUtil;
+import testcase.dbTest.DbDemoTest;
 
 /**
  * https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver
@@ -36,6 +37,8 @@ public abstract class BasePage {
 
     public JavascriptExecutor jsExecutor;
 
+    private static final ReportLogger reportLogger = ReportLogger.getReportLogger(DbDemoTest.class);
+
     /**
      * Thread sleep n second
      * @param second n
@@ -45,7 +48,7 @@ public abstract class BasePage {
         try {
             Thread.sleep(1000 * second);
         }catch (InterruptedException e) {
-            LogUtil.APP.error("线程睡眠失败",e);
+            reportLogger.info("线程睡眠失败",e.getMessage());
         }
     }
 

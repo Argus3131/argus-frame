@@ -1,9 +1,11 @@
 package modules.webTestBase;
 
+import config.ReportLogger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.LogUtil;
+import testcase.dbTest.DbDemoTest;
+
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -24,6 +26,7 @@ public class BaseFunction {
 
     private static Random random = new Random();
 
+    private static final ReportLogger reportLogger = ReportLogger.getReportLogger(DbDemoTest.class);
     /**
      * Judge the element to be visible
      * @param driverWait
@@ -135,7 +138,7 @@ public class BaseFunction {
             }
             if ( !isUnWantedEles ) {
                 errorElesListNotIncludeUnwanted.add( errorEle );
-                LogUtil.APP.error("ErrorEle ======== " + errorEle);
+                reportLogger.info("ErrorEle ======== " + errorEle);
             }
         }
         return errorElesListNotIncludeUnwanted;

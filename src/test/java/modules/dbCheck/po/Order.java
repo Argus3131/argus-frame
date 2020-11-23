@@ -1,5 +1,7 @@
 package modules.dbCheck.po;
 
+import lombok.ToString;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -37,6 +39,29 @@ public class Order {
     private Date expiredTime;
 
     private Date placedTime;
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", orderNo='" + orderNo + '\'' +
+                ", userId=" + userId +
+                ", totalPrice=" + totalPrice +
+                ", totalCount=" + totalCount +
+                ", createTime=" + createTime +
+                ", deleteTime=" + deleteTime +
+                ", updateTime=" + updateTime +
+                ", snapImg='" + snapImg + '\'' +
+                ", snapTitle='" + snapTitle + '\'' +
+                ", snapItems='" + snapItems + '\'' +
+                ", snapAddress='" + snapAddress + '\'' +
+                ", prepayId='" + prepayId + '\'' +
+                ", finalTotalPrice=" + finalTotalPrice +
+                ", status=" + status +
+                ", expiredTime=" + expiredTime +
+                ", placedTime=" + placedTime +
+                '}';
+    }
 
     public Order(Integer id, String orderNo, Integer userId, BigDecimal totalPrice, Integer totalCount, Date createTime, Date deleteTime, Date updateTime, String snapImg, String snapTitle, String snapItems, String snapAddress, String prepayId, BigDecimal finalTotalPrice, Byte status, Date expiredTime, Date placedTime) {
         this.id = id;
@@ -198,26 +223,4 @@ public class Order {
         this.placedTime = placedTime;
     }
 
-    @Override
-    public String toString() {
-        return "Order{" +
-                "id=" + id +
-                ", orderNo='" + orderNo + '\'' +
-                ", userId=" + userId +
-                ", totalPrice=" + totalPrice +
-                ", totalCount=" + totalCount +
-                ", createTime=" + createTime +
-                ", deleteTime=" + deleteTime +
-                ", updateTime=" + updateTime +
-                ", snapImg='" + snapImg + '\'' +
-                ", snapTitle='" + snapTitle + '\'' +
-                ", snapItems='" + snapItems + '\'' +
-                ", snapAddress='" + snapAddress + '\'' +
-                ", prepayId='" + prepayId + '\'' +
-                ", finalTotalPrice=" + finalTotalPrice +
-                ", status=" + status +
-                ", expiredTime=" + expiredTime +
-                ", placedTime=" + placedTime +
-                '}';
-    }
 }

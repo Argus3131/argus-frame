@@ -1,8 +1,7 @@
 package config;
 
 
-import utils.LogUtil;
-import utils.PropertiesUtil;
+import testcase.dbTest.DbDemoTest;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -17,13 +16,14 @@ import java.util.Properties;
 public class DbConfig {
 	private static final Properties DB_CONFIG = new Properties();
 	private static final String SYS_CONFIG_FILE = "application.properties";
+	private static final ReportLogger reportLogger = ReportLogger.getReportLogger(DbDemoTest.class);
 
 	static{
 		try {
 			InputStream in = new BufferedInputStream(DbConfig.class.getResourceAsStream(SYS_CONFIG_FILE));
 			DB_CONFIG.load(new InputStreamReader(in, StandardCharsets.UTF_8));
 		} catch (IOException e) {
-			LogUtil.APP.error("读取测试驱动application.properties配置文件出现异常，请检查！", e);
+			reportLogger.info("读取测试驱动application.properties配置文件出现异常，请检查！", e.getMessage());
 		}
 	}
 
